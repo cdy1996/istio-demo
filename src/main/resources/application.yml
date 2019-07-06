@@ -1,0 +1,10 @@
+server:
+  port: 8088
+  context-path: demo
+spring:
+  profiles:
+    include: env
+    active: dev
+management:
+  security:
+    enabled: false

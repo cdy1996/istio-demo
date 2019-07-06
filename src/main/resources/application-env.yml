@@ -1,0 +1,21 @@
+---
+# 开发环境
+spring:
+  profiles: dev
+
+remoting:
+  web: http://localhost:8090/web
+
+logging:
+  path: ./
+
+---
+# 测试环境
+spring:
+  profiles: test
+
+remoting:
+  web: http://istio.web:8090/web
+
+logging:
+  path: /logs/
