@@ -1,10 +1,13 @@
 server:
   port: 8088
-  context-path: demo
+  context-path: /demo
+
 spring:
+  application:
+    name: istio-demo
   profiles:
     include: env
-    active: dev
+
 management:
   security:
     enabled: false

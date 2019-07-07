@@ -8,6 +8,7 @@ remoting:
 
 logging:
   path: ./
+  file: ${spring.application.name}.log
 
 ---
 # 测试环境
@@ -15,7 +16,8 @@ spring:
   profiles: test
 
 remoting:
-  web: http://istio.web:8090/web
+  web: http://istio-web/web
 
 logging:
   path: /logs/
+  file: ${spring.application.name}.log
